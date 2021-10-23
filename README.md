@@ -1,4 +1,4 @@
-# homework-week1
+# VueJS-ShoeApp
 
 ## Project setup
 ```
