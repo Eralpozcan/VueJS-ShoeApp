@@ -163,6 +163,7 @@ export default {
   position:absolute;
   right: 0px;
 }
+
 .cart-icon {
   color: whitesmoke;
 }

@@ -192,6 +192,7 @@ a {
   width: 100%;
   position: relative;
   appearance: none;
+  margin: 1px;
   
 }
 .size-box label {
@@ -200,7 +201,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   width: 40px;
   height: 40px;
   color: white;
