@@ -60,7 +60,7 @@
                   </b-row>
                   <b-row>
                     <b-col class="mt-3 d-flex align-items-center justify-content-center">
-                      <b-button @click="addToBasket()" :class="selectedcolor" href="#" >Add Cart</b-button>
+                      <b-button @click="addToBasket()" variant="gray" :class="selectedcolor" href="#" >Add Cart</b-button>
                     </b-col>                
                   </b-row>                   
               </b-col>                 
@@ -191,6 +191,7 @@ a {
   justify-content: flex-end;
   width: 100%;
   position: relative;
+  appearance: none;
   
 }
 .size-box label {
@@ -199,6 +200,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  
   width: 40px;
   height: 40px;
   color: white;

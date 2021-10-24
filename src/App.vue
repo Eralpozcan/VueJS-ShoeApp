@@ -10,35 +10,37 @@
             <b-nav-item href="#">Homepage</b-nav-item>
             <b-nav-item href="#">Men</b-nav-item>
             <b-nav-item href="#">Women</b-nav-item>
-            <b-nav-item-dropdown class="item" role=""> <!-- farklı bir hizlama bak-->
-              <template #button-content>
-                  <b-icon icon="cart4"></b-icon>
-                  <b-badge class="mx-2" size="sm" variant="gray">{{addBasket.length}}</b-badge>
-              </template>
-              <b-dropdown-form v-for="(el,i) in addBasket" :key="i">
-                <div class="cart">
-                  <div class="d-flex align-items-center">
-                      <img height="75" width="75" :src="el.image" class="cart-img rounded-3"/>
-                      <div class="cart-desciption">
+          </b-navbar-nav> 
+        </b-collapse>
+          <b-dropdown class="item d-flex justify-content-end" variant="gray" no-caret>
+            <template #button-content>
+                <b-icon class="cart-icon" icon="cart4"></b-icon>
+                <b-badge class="mx-2" size="sm">{{addBasket.length}}</b-badge>
+            </template>           
+            <b-dropdown-form v-for="(el,i) in addBasket" :key="i">
+              <div class="cart">
+                <div class="d-flex align-items-center">
+                    <b-col>
+                      <img height="100" width="100" :src="el.image" class="cart-img rounded-3"/>
+                    </b-col>
+                    <b-col>
                           <p class="item-name m-1">{{el.name}}</p>
-                          <p class="item-size m-1 ">Size : {{el.size}}</p>
+                          <p class="item-size mx-1 ">Size : {{el.size}}</p>
                           <p class="item-price m-1 mb-1">Price $ {{el.price * el.quantity}}</p>
-                          <div class="d-flex align-items-center justify-content-between">
+                          <b-col class="d-flex align-items-center justify-content-between">
                               <b-icon variant="danger" @click="el.quantity--,el.quantity<1 ? el.quantity=1:''" icon="dash-circle" aria-hidden="true"></b-icon>
                               <p class="m-0">{{el.quantity}}</p>
                               <b-icon variant="success" @click="el.quantity++" icon="plus-circle" aria-hidden="true"></b-icon>
                               <button type="button" @click="deleteProduct(el)" class="btn btn-secondary mx-1"><b-icon icon="trash-fill"></b-icon>
                               </button>
-                          </div>
-                      </div>
-                  </div>
+                          </b-col>                      
+                    </b-col>
                 </div>
-              </b-dropdown-form>
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
-        </b-collapse>
+              </div>
+            </b-dropdown-form>
+          </b-dropdown>
       </b-navbar>
-      <div class="d-flex justify-content-around flex-wrap">
+      <div class="d-flex justify-content-center flex-wrap w-100 align-items-center">
         <ProductCard v-for="(item,index) in products" :key="index" :products="item" @addProduct="addProduct" />
       </div>
   </div>
@@ -125,7 +127,7 @@ export default {
             sizes:[5,6,7,8,9,10],  
           },
         ],
-        addBasket:[]
+        addBasket:[],
     }
   },
   methods:{
@@ -157,6 +159,14 @@ export default {
 .nav-bar-class{
   background-color: rgb(170, 98, 170);
 }
+.item {
+  position:absolute;
+  right: 0px;
+}
+.cart-icon {
+  color: whitesmoke;
+}
+
 
 
 </style>
