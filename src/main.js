@@ -1,16 +1,18 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
+import "./style.css";
 import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import router from './router'
+import PrimeVue from 'primevue/config';
+import Lara from '@/presets/lara';      //import preset        
+import 'primeicons/primeicons.css'
 
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+const app = createApp(App)
 
-Vue.config.productionTip = false
+app.use(router)
+app.use(PrimeVue, {
+  unstyled: true,
+  pt: Lara     
+});
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+app.mount('#app')
+
