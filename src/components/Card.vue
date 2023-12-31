@@ -1,21 +1,18 @@
 <template>
   <Card style="width: 25em">
     <template #header>
-      <img class="w-32 h-48 mx-auto border-round" alt="user header" src="../assets/logo.svg" />
+      <img class="w-32 h-48 mx-auto border-round" alt="user header" :src="availableDefaultImage" />
     </template>
     <template #title> 
       <div class="text-xl">
-        Advanced Card
+        {{ getName }}
       </div>
     </template>
     <template #subtitle> Card subtitle </template>
     <template #content>
-      <Rating v-model="value" readonly :cancel="false"> </Rating>
+      <Rating v-model="props.data.rating" readonly :cancel="false"> </Rating>
       <p class="m-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
-        deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-        neque
-        quas!
+        {{ getDesc }}
       </p>
     </template>
     <template #footer>
@@ -25,12 +22,36 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed, defineProps } from 'vue';
 import Card from 'primevue/card';
 import Button from 'primevue/button';
 import Rating from 'primevue/rating';
+import { useI18n } from 'vue-i18n';
 
-const value = ref(4);
+
+const { locale } = useI18n();
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
+
+const availableDefaultImage = ref(props.data.images[0])
+
+
+const getName = computed(() => {
+  if (locale.value === 'en') {
+    return props.data.name.en;
+  } else return props.data.name.tr;
+})
+const getDesc = computed(() => {
+  if (locale.value === 'en') {
+    return props.data.description.en;
+  } else return props.data.description.tr;
+})
+
+
 
 
 </script>

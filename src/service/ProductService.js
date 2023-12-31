@@ -1,1200 +1,256 @@
 export const ProductService = {
   getProductsData() {
       return [
-          {
-              id: '1000',
-              code: 'f230fh0g3',
-              name: 'Bamboo Watch',
-              description: 'Product Description',
-              image: 'bamboo-watch.jpg',
-              price: 65,
-              category: 'Accessories',
-              quantity: 24,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+        {
+          id: "fae379ae-fd84-40b7-853a-29815070e369",
+          code: "NIK-001",
+          name: {
+            en: "Nike Epic React Flyknit",
+            tr: "Nike Epic React Flyknit"
           },
-          {
-              id: '1001',
-              code: 'nvklal433',
-              name: 'Black Watch',
-              description: 'Product Description',
-              image: 'black-watch.jpg',
-              price: 72,
-              category: 'Accessories',
-              quantity: 61,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          description: {
+            en: "Nike React Infinity Run Flyknit 2 with you never stop running.",
+            tr: "Nike React Infinity Run Flyknit 2 ile koşmayı asla bırakma."
           },
-          {
-              id: '1002',
-              code: 'zz21cz3c1',
-              name: 'Blue Band',
-              description: 'Product Description',
-              image: 'blue-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3
+          images:{
+            pink:'@/assets/images/pink.png',
+            mint:'@/assets/images/mint.png',
+            blue:'@/assets/images/blue.png',
           },
-          {
-              id: '1003',
-              code: '244wgerg2',
-              name: 'Blue T-Shirt',
-              description: 'Product Description',
-              image: 'blue-t-shirt.jpg',
-              price: 29,
-              category: 'Clothing',
-              quantity: 25,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+          availableColor:["pink","mint","blue"],
+          availableSize:[5,6,7,8,9,10],
+          category: 'Shoes',
+          gender: 'Unisex',
+          quantity: 15,
+          inventoryStatus: 'INSTOCK',
+          price: 100,
+          rating: 4.5,
+        },
+        {
+          id: "c6b51107-7a58-4764-a037-37bb1eafc750",
+          code: "NIK-002",
+          name: {
+            en: "Nike Epic React Flyknit One",
+            tr: "Nike Epic React Flyknit One"
           },
-          {
-              id: '1004',
-              code: 'h456wer53',
-              name: 'Bracelet',
-              description: 'Product Description',
-              image: 'bracelet.jpg',
-              price: 15,
-              category: 'Accessories',
-              quantity: 73,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          description: {
+            en: "Nike React Infinity Run Flyknit One with you never stop running.",
+            tr: "Nike React Infinity Run Flyknit One ile koşmayı asla bırakma."
           },
-          {
-              id: '1005',
-              code: 'av2231fwg',
-              name: 'Brown Purse',
-              description: 'Product Description',
-              image: 'brown-purse.jpg',
-              price: 120,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4
+          images:{
+            pink:'@/assets/images/pink.png',
+            mint:'@/assets/images/mint.png',
+            blue:'@/assets/images/blue.png',
           },
-          {
-              id: '1006',
-              code: 'bib36pfvm',
-              name: 'Chakra Bracelet',
-              description: 'Product Description',
-              image: 'chakra-bracelet.jpg',
-              price: 32,
-              category: 'Accessories',
-              quantity: 5,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3
+          availableColor:["pink","mint","blue"],
+          availableSize:[5,7,9,10],
+          category: 'Shoes',
+          gender: 'Men',
+          quantity: 3,
+          inventoryStatus: 'LOWSTOCK',
+          price: 90,
+          rating: 3,
+        },
+        {
+          id: "c6b51107-7a58-4764-a037-37bb1eafc750",
+          code: "NIK-003",
+          name: {
+            en: "Nike Child React Flyknit Smoke",
+            tr: "Nike Child React Flyknit Smoke"
           },
-          {
-              id: '1007',
-              code: 'mbvjkgip5',
-              name: 'Galaxy Earrings',
-              description: 'Product Description',
-              image: 'galaxy-earrings.jpg',
-              price: 34,
-              category: 'Accessories',
-              quantity: 23,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+          description: {
+            en: "Nike React Run Flyknit Smoke with you never stop running.",
+            tr: "Nike React Run Flyknit Smoke ile koşmayı asla bırakma."
           },
-          {
-              id: '1008',
-              code: 'vbb124btr',
-              name: 'Game Controller',
-              description: 'Product Description',
-              image: 'game-controller.jpg',
-              price: 99,
-              category: 'Electronics',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 4
+          images:{
+            pink:'@/assets/images/pink.png',
+            mint:'@/assets/images/mint.png',
+            blue:'@/assets/images/blue.png',
           },
-          {
-              id: '1009',
-              code: 'cm230f032',
-              name: 'Gaming Set',
-              description: 'Product Description',
-              image: 'gaming-set.jpg',
-              price: 299,
-              category: 'Electronics',
-              quantity: 63,
-              inventoryStatus: 'INSTOCK',
-              rating: 3
+          availableColor:["pink","mint","blue"],
+          availableSize:[5,6,7],
+          category: 'Shoes',
+          gender: 'Women',
+          quantity: 3,
+          inventoryStatus: 'OUTOFSTOCK',
+          price: 175,
+          rating: 3,
+        },
+        {
+          id: "e54a8a20-842a-4c58-9b58-87f99c019a93",
+          code: "ADI-001",
+          name: {
+            en: "Adidas Ultraboost",
+            tr: "Adidas Ultraboost"
           },
-          {
-              id: '1010',
-              code: 'plb34234v',
-              name: 'Gold Phone Case',
-              description: 'Product Description',
-              image: 'gold-phone-case.jpg',
-              price: 24,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4
+          description: {
+            en: "Adidas Ultraboost with responsive cushioning for endless energy.",
+            tr: "Adidas Ultraboost, bitmeyen enerji için tepki veren yastıklama ile."
           },
-          {
-              id: '1011',
-              code: '4920nnc2d',
-              name: 'Green Earbuds',
-              description: 'Product Description',
-              image: 'green-earbuds.jpg',
-              price: 89,
-              category: 'Electronics',
-              quantity: 23,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          images:{
+            black: '@/assets/images/black.png',
+            white: '@/assets/images/white.png',
+            red: '@/assets/images/red.png',
           },
-          {
-              id: '1012',
-              code: '250vm23cc',
-              name: 'Green T-Shirt',
-              description: 'Product Description',
-              image: 'green-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 74,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+          availableColor: ["black", "white", "red"],
+          availableSize: [6, 7, 8, 9, 10, 11],
+          category: 'Shoes',
+          gender: 'Unisex',
+          quantity: 20,
+          inventoryStatus: 'INSTOCK',
+          price: 120,
+          rating: 4.8,
+        },
+        {
+          id: "93f8b874-eb8f-4ef7-b6e0-4180b512d5f7",
+          code: "PUM-001",
+          name: {
+            en: "Puma Ignite XT",
+            tr: "Puma Ignite XT"
           },
-          {
-              id: '1013',
-              code: 'fldsmn31b',
-              name: 'Grey T-Shirt',
-              description: 'Product Description',
-              image: 'grey-t-shirt.jpg',
-              price: 48,
-              category: 'Clothing',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 3
+          description: {
+            en: "Puma Ignite XT designed for high-intensity workouts and comfort.",
+            tr: "Yüksek yoğunluklu antrenmanlar ve konfor için tasarlanmış Puma Ignite XT."
           },
-          {
-              id: '1014',
-              code: 'waas1x2as',
-              name: 'Headphones',
-              description: 'Product Description',
-              image: 'headphones.jpg',
-              price: 175,
-              category: 'Electronics',
-              quantity: 8,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 5
+          images:{
+            gray: '@/assets/images/gray.png',
+            orange: '@/assets/images/orange.png',
+            green: '@/assets/images/green.png',
           },
-          {
-              id: '1015',
-              code: 'vb34btbg5',
-              name: 'Light Green T-Shirt',
-              description: 'Product Description',
-              image: 'light-green-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 34,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          availableColor: ["gray", "orange", "green"],
+          availableSize: [7, 8, 9, 10, 11],
+          category: 'Shoes',
+          gender: 'Men',
+          quantity: 12,
+          inventoryStatus: 'LOWSTOCK',
+          price: 80,
+          rating: 4.2,
+        },
+        {
+          id: "a33f4a8e-73e3-45a0-9ef0-9d4bdc1a62b2",
+          code: "NB-001",
+          name: {
+            en: "New Balance Fresh Foam",
+            tr: "New Balance Fresh Foam"
           },
-          {
-              id: '1016',
-              code: 'k8l6j58jl',
-              name: 'Lime Band',
-              description: 'Product Description',
-              image: 'lime-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 12,
-              inventoryStatus: 'INSTOCK',
-              rating: 3
+          description: {
+            en: "New Balance Fresh Foam provides a plush and natural ride.",
+            tr: "New Balance Fresh Foam, peluş ve doğal bir sürüş sunar."
           },
-          {
-              id: '1017',
-              code: 'v435nn85n',
-              name: 'Mini Speakers',
-              description: 'Product Description',
-              image: 'mini-speakers.jpg',
-              price: 85,
-              category: 'Clothing',
-              quantity: 42,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          images:{
+            purple: '@/assets/images/purple.png',
+            teal: '@/assets/images/teal.png',
+            black: '@/assets/images/black.png',
           },
-          {
-              id: '1018',
-              code: '09zx9c0zc',
-              name: 'Painted Phone Case',
-              description: 'Product Description',
-              image: 'painted-phone-case.jpg',
-              price: 56,
-              category: 'Accessories',
-              quantity: 41,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+          availableColor: ["purple", "teal", "black"],
+          availableSize: [6, 7, 8, 9],
+          category: 'Shoes',
+          gender: 'Women',
+          quantity: 8,
+          inventoryStatus: 'INSTOCK',
+          price: 95,
+          rating: 4.5,
+        },
+        {
+          id: "48dc33c5-39eb-4653-aa2d-6f057a87b65b",
+          code: "REE-001",
+          name: {
+            en: "Reebok Nano X",
+            tr: "Reebok Nano X"
           },
-          {
-              id: '1019',
-              code: 'mnb5mb2m5',
-              name: 'Pink Band',
-              description: 'Product Description',
-              image: 'pink-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 63,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          description: {
+            en: "Reebok Nano X designed for cross-training with stability and durability.",
+            tr: "Stabilite ve dayanıklılık için tasarlanmış Reebok Nano X çapraz antrenmanlar için."
           },
-          {
-              id: '1020',
-              code: 'r23fwf2w3',
-              name: 'Pink Purse',
-              description: 'Product Description',
-              image: 'pink-purse.jpg',
-              price: 110,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4
+          images:{
+            blue: '@/assets/images/blue.png',
+            yellow: '@/assets/images/yellow.png',
+            black: '@/assets/images/black.png',
           },
-          {
-              id: '1021',
-              code: 'pxpzczo23',
-              name: 'Purple Band',
-              description: 'Product Description',
-              image: 'purple-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 6,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3
+          availableColor: ["blue", "yellow", "black"],
+          availableSize: [7, 8, 9, 10],
+          category: 'Shoes',
+          gender: 'Unisex',
+          quantity: 18,
+          inventoryStatus: 'INSTOCK',
+          price: 110,
+          rating: 4.4,
+        },
+        {
+          id: "c81cc1e3-8109-4ff9-b0e4-392ac1c927f2",
+          code: "VAN-001",
+          name: {
+            en: "Vans Old Skool",
+            tr: "Vans Old Skool"
           },
-          {
-              id: '1022',
-              code: '2c42cb5cb',
-              name: 'Purple Gemstone Necklace',
-              description: 'Product Description',
-              image: 'purple-gemstone-necklace.jpg',
-              price: 45,
-              category: 'Accessories',
-              quantity: 62,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          description: {
+            en: "Vans Old Skool, classic skate shoes with timeless style.",
+            tr: "Zamanın ötesinde bir stile sahip olan klasik kaykay ayakkabısı Vans Old Skool."
           },
-          {
-              id: '1023',
-              code: '5k43kkk23',
-              name: 'Purple T-Shirt',
-              description: 'Product Description',
-              image: 'purple-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 5
+          images:{
+            blackWhite: '@/assets/images/black-white.png',
+            redWhite: '@/assets/images/red-white.png',
+            blueWhite: '@/assets/images/blue-white.png',
           },
-          {
-              id: '1024',
-              code: 'lm2tny2k4',
-              name: 'Shoes',
-              description: 'Product Description',
-              image: 'shoes.jpg',
-              price: 64,
-              category: 'Clothing',
-              quantity: 0,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          availableColor: ["blackWhite", "redWhite", "blueWhite"],
+          availableSize: [6, 7, 8, 9, 10],
+          category: 'Shoes',
+          gender: 'Unisex',
+          quantity: 14,
+          inventoryStatus: 'INSTOCK',
+          price: 75,
+          rating: 4.7,
+        },
+        {
+          id: "e26c3f4a-c4c5-4e16-951f-87433e70cb94",
+          code: "CON-001",
+          name: {
+            en: "Converse Chuck Taylor All Star",
+            tr: "Converse Chuck Taylor All Star"
           },
-          {
-              id: '1025',
-              code: 'nbm5mv45n',
-              name: 'Sneakers',
-              description: 'Product Description',
-              image: 'sneakers.jpg',
-              price: 78,
-              category: 'Clothing',
-              quantity: 52,
-              inventoryStatus: 'INSTOCK',
-              rating: 4
+          description: {
+            en: "Converse Chuck Taylor All Star, the iconic sneaker for everyday style.",
+            tr: "Her gün stil için ikonik spor ayakkabı Converse Chuck Taylor All Star."
           },
-          {
-              id: '1026',
-              code: 'zx23zc42c',
-              name: 'Teal T-Shirt',
-              description: 'Product Description',
-              image: 'teal-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 3,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3
+          images:{
+            blackCanvas: '@/assets/images/black-canvas.png',
+            whiteCanvas: '@/assets/images/white-canvas.png',
+            redCanvas: '@/assets/images/red-canvas.png',
           },
-          {
-              id: '1027',
-              code: 'acvx872gc',
-              name: 'Yellow Earbuds',
-              description: 'Product Description',
-              image: 'yellow-earbuds.jpg',
-              price: 89,
-              category: 'Electronics',
-              quantity: 35,
-              inventoryStatus: 'INSTOCK',
-              rating: 3
+          availableColor: ["blackCanvas", "whiteCanvas", "redCanvas"],
+          availableSize: [5, 6, 8, 9, 10],
+          category: 'Shoes',
+          gender: 'Unisex',
+          quantity: 10,
+          inventoryStatus: 'LOWSTOCK',
+          price: 65,
+          rating: 4.6,
+        },
+        {
+          id: "d3843a59-656e-4d67-8ff5-c42416e8e6d9",
+          code: "ASICS-001",
+          name: {
+            en: "ASICS Gel-Kayano",
+            tr: "ASICS Gel-Kayano"
           },
-          {
-              id: '1028',
-              code: 'tx125ck42',
-              name: 'Yoga Mat',
-              description: 'Product Description',
-              image: 'yoga-mat.jpg',
-              price: 20,
-              category: 'Fitness',
-              quantity: 15,
-              inventoryStatus: 'INSTOCK',
-              rating: 5
+          description: {
+            en: "ASICS Gel-Kayano offers stability and comfort for long-distance running.",
+            tr: "ASICS Gel-Kayano, uzun mesafe koşuları için stabilite ve konfor sunar."
           },
-          {
-              id: '1029',
-              code: 'gwuby345v',
-              name: 'Yoga Set',
-              description: 'Product Description',
-              image: 'yoga-set.jpg',
-              price: 20,
-              category: 'Fitness',
-              quantity: 25,
-              inventoryStatus: 'INSTOCK',
-              rating: 8
-          }
-      ];
-  },
-
-  getProductsWithOrdersData() {
-      return [
-          {
-              id: '1000',
-              code: 'f230fh0g3',
-              name: 'Bamboo Watch',
-              description: 'Product Description',
-              image: 'bamboo-watch.jpg',
-              price: 65,
-              category: 'Accessories',
-              quantity: 24,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1000-0',
-                      productCode: 'f230fh0g3',
-                      date: '2020-09-13',
-                      amount: 65,
-                      quantity: 1,
-                      customer: 'David James',
-                      status: 'PENDING'
-                  },
-                  {
-                      id: '1000-1',
-                      productCode: 'f230fh0g3',
-                      date: '2020-05-14',
-                      amount: 130,
-                      quantity: 2,
-                      customer: 'Leon Rodrigues',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1000-2',
-                      productCode: 'f230fh0g3',
-                      date: '2019-01-04',
-                      amount: 65,
-                      quantity: 1,
-                      customer: 'Juan Alejandro',
-                      status: 'RETURNED'
-                  },
-                  {
-                      id: '1000-3',
-                      productCode: 'f230fh0g3',
-                      date: '2020-09-13',
-                      amount: 195,
-                      quantity: 3,
-                      customer: 'Claire Morrow',
-                      status: 'CANCELLED'
-                  }
-              ]
+          images:{
+            blackSilver: '@/assets/images/black-silver.png',
+            blueWhite: '@/assets/images/blue-white.png',
+            redBlack: '@/assets/images/red-black.png',
           },
-          {
-              id: '1001',
-              code: 'nvklal433',
-              name: 'Black Watch',
-              description: 'Product Description',
-              image: 'black-watch.jpg',
-              price: 72,
-              category: 'Accessories',
-              quantity: 61,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1001-0',
-                      productCode: 'nvklal433',
-                      date: '2020-05-14',
-                      amount: 72,
-                      quantity: 1,
-                      customer: 'Maisha Jefferson',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1001-1',
-                      productCode: 'nvklal433',
-                      date: '2020-02-28',
-                      amount: 144,
-                      quantity: 2,
-                      customer: 'Octavia Murillo',
-                      status: 'PENDING'
-                  }
-              ]
-          },
-          {
-              id: '1002',
-              code: 'zz21cz3c1',
-              name: 'Blue Band',
-              description: 'Product Description',
-              image: 'blue-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1002-0',
-                      productCode: 'zz21cz3c1',
-                      date: '2020-07-05',
-                      amount: 79,
-                      quantity: 1,
-                      customer: 'Stacey Leja',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1002-1',
-                      productCode: 'zz21cz3c1',
-                      date: '2020-02-06',
-                      amount: 79,
-                      quantity: 1,
-                      customer: 'Ashley Wickens',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1003',
-              code: '244wgerg2',
-              name: 'Blue T-Shirt',
-              description: 'Product Description',
-              image: 'blue-t-shirt.jpg',
-              price: 29,
-              category: 'Clothing',
-              quantity: 25,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: []
-          },
-          {
-              id: '1004',
-              code: 'h456wer53',
-              name: 'Bracelet',
-              description: 'Product Description',
-              image: 'bracelet.jpg',
-              price: 15,
-              category: 'Accessories',
-              quantity: 73,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1004-0',
-                      productCode: 'h456wer53',
-                      date: '2020-09-05',
-                      amount: 60,
-                      quantity: 4,
-                      customer: 'Mayumi Misaki',
-                      status: 'PENDING'
-                  },
-                  {
-                      id: '1004-1',
-                      productCode: 'h456wer53',
-                      date: '2019-04-16',
-                      amount: 2,
-                      quantity: 30,
-                      customer: 'Francesco Salvatore',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1005',
-              code: 'av2231fwg',
-              name: 'Brown Purse',
-              description: 'Product Description',
-              image: 'brown-purse.jpg',
-              price: 120,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1005-0',
-                      productCode: 'av2231fwg',
-                      date: '2020-01-25',
-                      amount: 120,
-                      quantity: 1,
-                      customer: 'Isabel Sinclair',
-                      status: 'RETURNED'
-                  },
-                  {
-                      id: '1005-1',
-                      productCode: 'av2231fwg',
-                      date: '2019-03-12',
-                      amount: 240,
-                      quantity: 2,
-                      customer: 'Lionel Clifford',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1005-2',
-                      productCode: 'av2231fwg',
-                      date: '2019-05-05',
-                      amount: 120,
-                      quantity: 1,
-                      customer: 'Cody Chavez',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1006',
-              code: 'bib36pfvm',
-              name: 'Chakra Bracelet',
-              description: 'Product Description',
-              image: 'chakra-bracelet.jpg',
-              price: 32,
-              category: 'Accessories',
-              quantity: 5,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1006-0',
-                      productCode: 'bib36pfvm',
-                      date: '2020-02-24',
-                      amount: 32,
-                      quantity: 1,
-                      customer: 'Arvin Darci',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1006-1',
-                      productCode: 'bib36pfvm',
-                      date: '2020-01-14',
-                      amount: 64,
-                      quantity: 2,
-                      customer: 'Izzy Jones',
-                      status: 'PENDING'
-                  }
-              ]
-          },
-          {
-              id: '1007',
-              code: 'mbvjkgip5',
-              name: 'Galaxy Earrings',
-              description: 'Product Description',
-              image: 'galaxy-earrings.jpg',
-              price: 34,
-              category: 'Accessories',
-              quantity: 23,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1007-0',
-                      productCode: 'mbvjkgip5',
-                      date: '2020-06-19',
-                      amount: 34,
-                      quantity: 1,
-                      customer: 'Jennifer Smith',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1008',
-              code: 'vbb124btr',
-              name: 'Game Controller',
-              description: 'Product Description',
-              image: 'game-controller.jpg',
-              price: 99,
-              category: 'Electronics',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1008-0',
-                      productCode: 'vbb124btr',
-                      date: '2020-01-05',
-                      amount: 99,
-                      quantity: 1,
-                      customer: 'Jeanfrancois David',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1008-1',
-                      productCode: 'vbb124btr',
-                      date: '2020-01-19',
-                      amount: 198,
-                      quantity: 2,
-                      customer: 'Ivar Greenwood',
-                      status: 'RETURNED'
-                  }
-              ]
-          },
-          {
-              id: '1009',
-              code: 'cm230f032',
-              name: 'Gaming Set',
-              description: 'Product Description',
-              image: 'gaming-set.jpg',
-              price: 299,
-              category: 'Electronics',
-              quantity: 63,
-              inventoryStatus: 'INSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1009-0',
-                      productCode: 'cm230f032',
-                      date: '2020-06-24',
-                      amount: 299,
-                      quantity: 1,
-                      customer: 'Kadeem Mujtaba',
-                      status: 'PENDING'
-                  },
-                  {
-                      id: '1009-1',
-                      productCode: 'cm230f032',
-                      date: '2020-05-11',
-                      amount: 299,
-                      quantity: 1,
-                      customer: 'Ashley Wickens',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1009-2',
-                      productCode: 'cm230f032',
-                      date: '2019-02-07',
-                      amount: 299,
-                      quantity: 1,
-                      customer: 'Julie Johnson',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1009-3',
-                      productCode: 'cm230f032',
-                      date: '2020-04-26',
-                      amount: 299,
-                      quantity: 1,
-                      customer: 'Tony Costa',
-                      status: 'CANCELLED'
-                  }
-              ]
-          },
-          {
-              id: '1010',
-              code: 'plb34234v',
-              name: 'Gold Phone Case',
-              description: 'Product Description',
-              image: 'gold-phone-case.jpg',
-              price: 24,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1010-0',
-                      productCode: 'plb34234v',
-                      date: '2020-02-04',
-                      amount: 24,
-                      quantity: 1,
-                      customer: 'James Butt',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1010-1',
-                      productCode: 'plb34234v',
-                      date: '2020-05-05',
-                      amount: 48,
-                      quantity: 2,
-                      customer: 'Josephine Darakjy',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1011',
-              code: '4920nnc2d',
-              name: 'Green Earbuds',
-              description: 'Product Description',
-              image: 'green-earbuds.jpg',
-              price: 89,
-              category: 'Electronics',
-              quantity: 23,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1011-0',
-                      productCode: '4920nnc2d',
-                      date: '2020-06-01',
-                      amount: 89,
-                      quantity: 1,
-                      customer: 'Art Venere',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1012',
-              code: '250vm23cc',
-              name: 'Green T-Shirt',
-              description: 'Product Description',
-              image: 'green-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 74,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1012-0',
-                      productCode: '250vm23cc',
-                      date: '2020-02-05',
-                      amount: 49,
-                      quantity: 1,
-                      customer: 'Lenna Paprocki',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1012-1',
-                      productCode: '250vm23cc',
-                      date: '2020-02-15',
-                      amount: 49,
-                      quantity: 1,
-                      customer: 'Donette Foller',
-                      status: 'PENDING'
-                  }
-              ]
-          },
-          {
-              id: '1013',
-              code: 'fldsmn31b',
-              name: 'Grey T-Shirt',
-              description: 'Product Description',
-              image: 'grey-t-shirt.jpg',
-              price: 48,
-              category: 'Clothing',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1013-0',
-                      productCode: 'fldsmn31b',
-                      date: '2020-04-01',
-                      amount: 48,
-                      quantity: 1,
-                      customer: 'Simona Morasca',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1014',
-              code: 'waas1x2as',
-              name: 'Headphones',
-              description: 'Product Description',
-              image: 'headphones.jpg',
-              price: 175,
-              category: 'Electronics',
-              quantity: 8,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1014-0',
-                      productCode: 'waas1x2as',
-                      date: '2020-05-15',
-                      amount: 175,
-                      quantity: 1,
-                      customer: 'Lenna Paprocki',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1014-1',
-                      productCode: 'waas1x2as',
-                      date: '2020-01-02',
-                      amount: 175,
-                      quantity: 1,
-                      customer: 'Donette Foller',
-                      status: 'CANCELLED'
-                  }
-              ]
-          },
-          {
-              id: '1015',
-              code: 'vb34btbg5',
-              name: 'Light Green T-Shirt',
-              description: 'Product Description',
-              image: 'light-green-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 34,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1015-0',
-                      productCode: 'vb34btbg5',
-                      date: '2020-07-02',
-                      amount: 98,
-                      quantity: 2,
-                      customer: 'Mitsue Tollner',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1016',
-              code: 'k8l6j58jl',
-              name: 'Lime Band',
-              description: 'Product Description',
-              image: 'lime-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 12,
-              inventoryStatus: 'INSTOCK',
-              rating: 3,
-              orders: []
-          },
-          {
-              id: '1017',
-              code: 'v435nn85n',
-              name: 'Mini Speakers',
-              description: 'Product Description',
-              image: 'mini-speakers.jpg',
-              price: 85,
-              category: 'Clothing',
-              quantity: 42,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1017-0',
-                      productCode: 'v435nn85n',
-                      date: '2020-07-12',
-                      amount: 85,
-                      quantity: 1,
-                      customer: 'Minna Amigon',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1018',
-              code: '09zx9c0zc',
-              name: 'Painted Phone Case',
-              description: 'Product Description',
-              image: 'painted-phone-case.jpg',
-              price: 56,
-              category: 'Accessories',
-              quantity: 41,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1018-0',
-                      productCode: '09zx9c0zc',
-                      date: '2020-07-01',
-                      amount: 56,
-                      quantity: 1,
-                      customer: 'Abel Maclead',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1018-1',
-                      productCode: '09zx9c0zc',
-                      date: '2020-05-02',
-                      amount: 56,
-                      quantity: 1,
-                      customer: 'Minna Amigon',
-                      status: 'RETURNED'
-                  }
-              ]
-          },
-          {
-              id: '1019',
-              code: 'mnb5mb2m5',
-              name: 'Pink Band',
-              description: 'Product Description',
-              image: 'pink-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 63,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: []
-          },
-          {
-              id: '1020',
-              code: 'r23fwf2w3',
-              name: 'Pink Purse',
-              description: 'Product Description',
-              image: 'pink-purse.jpg',
-              price: 110,
-              category: 'Accessories',
-              quantity: 0,
-              inventoryStatus: 'OUTOFSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1020-0',
-                      productCode: 'r23fwf2w3',
-                      date: '2020-05-29',
-                      amount: 110,
-                      quantity: 1,
-                      customer: 'Kiley Caldarera',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1020-1',
-                      productCode: 'r23fwf2w3',
-                      date: '2020-02-11',
-                      amount: 220,
-                      quantity: 2,
-                      customer: 'Graciela Ruta',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1021',
-              code: 'pxpzczo23',
-              name: 'Purple Band',
-              description: 'Product Description',
-              image: 'purple-band.jpg',
-              price: 79,
-              category: 'Fitness',
-              quantity: 6,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1021-0',
-                      productCode: 'pxpzczo23',
-                      date: '2020-02-02',
-                      amount: 79,
-                      quantity: 1,
-                      customer: 'Cammy Albares',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1022',
-              code: '2c42cb5cb',
-              name: 'Purple Gemstone Necklace',
-              description: 'Product Description',
-              image: 'purple-gemstone-necklace.jpg',
-              price: 45,
-              category: 'Accessories',
-              quantity: 62,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1022-0',
-                      productCode: '2c42cb5cb',
-                      date: '2020-06-29',
-                      amount: 45,
-                      quantity: 1,
-                      customer: 'Mattie Poquette',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1022-1',
-                      productCode: '2c42cb5cb',
-                      date: '2020-02-11',
-                      amount: 135,
-                      quantity: 3,
-                      customer: 'Meaghan Garufi',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1023',
-              code: '5k43kkk23',
-              name: 'Purple T-Shirt',
-              description: 'Product Description',
-              image: 'purple-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 2,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 5,
-              orders: [
-                  {
-                      id: '1023-0',
-                      productCode: '5k43kkk23',
-                      date: '2020-04-15',
-                      amount: 49,
-                      quantity: 1,
-                      customer: 'Gladys Rim',
-                      status: 'RETURNED'
-                  }
-              ]
-          },
-          {
-              id: '1024',
-              code: 'lm2tny2k4',
-              name: 'Shoes',
-              description: 'Product Description',
-              image: 'shoes.jpg',
-              price: 64,
-              category: 'Clothing',
-              quantity: 0,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: []
-          },
-          {
-              id: '1025',
-              code: 'nbm5mv45n',
-              name: 'Sneakers',
-              description: 'Product Description',
-              image: 'sneakers.jpg',
-              price: 78,
-              category: 'Clothing',
-              quantity: 52,
-              inventoryStatus: 'INSTOCK',
-              rating: 4,
-              orders: [
-                  {
-                      id: '1025-0',
-                      productCode: 'nbm5mv45n',
-                      date: '2020-02-19',
-                      amount: 78,
-                      quantity: 1,
-                      customer: 'Yuki Whobrey',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1025-1',
-                      productCode: 'nbm5mv45n',
-                      date: '2020-05-21',
-                      amount: 78,
-                      quantity: 1,
-                      customer: 'Fletcher Flosi',
-                      status: 'PENDING'
-                  }
-              ]
-          },
-          {
-              id: '1026',
-              code: 'zx23zc42c',
-              name: 'Teal T-Shirt',
-              description: 'Product Description',
-              image: 'teal-t-shirt.jpg',
-              price: 49,
-              category: 'Clothing',
-              quantity: 3,
-              inventoryStatus: 'LOWSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1026-0',
-                      productCode: 'zx23zc42c',
-                      date: '2020-04-24',
-                      amount: 98,
-                      quantity: 2,
-                      customer: 'Bette Nicka',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1027',
-              code: 'acvx872gc',
-              name: 'Yellow Earbuds',
-              description: 'Product Description',
-              image: 'yellow-earbuds.jpg',
-              price: 89,
-              category: 'Electronics',
-              quantity: 35,
-              inventoryStatus: 'INSTOCK',
-              rating: 3,
-              orders: [
-                  {
-                      id: '1027-0',
-                      productCode: 'acvx872gc',
-                      date: '2020-01-29',
-                      amount: 89,
-                      quantity: 1,
-                      customer: 'Veronika Inouye',
-                      status: 'DELIVERED'
-                  },
-                  {
-                      id: '1027-1',
-                      productCode: 'acvx872gc',
-                      date: '2020-06-11',
-                      amount: 89,
-                      quantity: 1,
-                      customer: 'Willard Kolmetz',
-                      status: 'DELIVERED'
-                  }
-              ]
-          },
-          {
-              id: '1028',
-              code: 'tx125ck42',
-              name: 'Yoga Mat',
-              description: 'Product Description',
-              image: 'yoga-mat.jpg',
-              price: 20,
-              category: 'Fitness',
-              quantity: 15,
-              inventoryStatus: 'INSTOCK',
-              rating: 5,
-              orders: []
-          },
-          {
-              id: '1029',
-              code: 'gwuby345v',
-              name: 'Yoga Set',
-              description: 'Product Description',
-              image: 'yoga-set.jpg',
-              price: 20,
-              category: 'Fitness',
-              quantity: 25,
-              inventoryStatus: 'INSTOCK',
-              rating: 8,
-              orders: [
-                  {
-                      id: '1029-0',
-                      productCode: 'gwuby345v',
-                      date: '2020-02-14',
-                      amount: 4,
-                      quantity: 80,
-                      customer: 'Maryann Royster',
-                      status: 'DELIVERED'
-                  }
-              ]
-          }
+          availableColor: ["blackSilver", "blueWhite", "redBlack"],
+          availableSize: [7, 8, 9, 10, 11],
+          category: 'Shoes',
+          gender: 'Men',
+          quantity: 16,
+          inventoryStatus: 'INSTOCK',
+          price: 130,
+          rating: 4.9,
+        },
       ];
   },
 
@@ -1209,13 +265,5 @@ export const ProductService = {
   getProducts() {
       return Promise.resolve(this.getProductsData());
   },
-
-  getProductsWithOrdersSmall() {
-      return Promise.resolve(this.getProductsWithOrdersData().slice(0, 10));
-  },
-
-  getProductsWithOrders() {
-      return Promise.resolve(this.getProductsWithOrdersData());
-  }
 };
 
