@@ -1,7 +1,7 @@
 <template>
   <Card style="width: 25em">
     <template #header>
-      <img class="w-32 h-48 mx-auto border-round" alt="user header" :src="availableDefaultImage" />
+      <img class="w-32 h-48 mx-auto border-round" alt="user header" :src="getImages" />
     </template>
     <template #title> 
       <div class="text-xl">
@@ -27,6 +27,9 @@ import Card from 'primevue/card';
 import Button from 'primevue/button';
 import Rating from 'primevue/rating';
 import { useI18n } from 'vue-i18n';
+import { getImageUrl } from '@/utils/helpers';
+
+const selectedColor = ref(null); 
 
 
 const { locale } = useI18n();
@@ -36,9 +39,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-const availableDefaultImage = ref(props.data.images[0])
-
 
 const getName = computed(() => {
   if (locale.value === 'en') {
@@ -51,6 +51,31 @@ const getDesc = computed(() => {
   } else return props.data.description.tr;
 })
 
+const getAvaibleColors = computed(() => {
+  const colorData = JSON.parse(JSON.stringify(props.data.availableColor))
+  return colorData
+})
+
+const getDefaultColor = computed(() => {
+  const colorData = JSON.parse(JSON.stringify(props.data.availableColor))
+  return colorData[0]
+})
+
+const getImages = computed(() => {
+  if (selectedColor.value === null) {
+    return getAvaibleImage.value[getDefaultColor.value]
+  } else {
+    const selectedColorData = getAvaibleImage.value.filter((item) => item === selectedColor.value)
+    console.log('selectedColorData', selectedColorData)
+    return selectedColorData[0]
+  }
+
+})
+
+const getAvaibleImage = computed(() => {
+  const ImageData = JSON.parse(JSON.stringify(props.data.images))
+  return ImageData
+})
 
 
 

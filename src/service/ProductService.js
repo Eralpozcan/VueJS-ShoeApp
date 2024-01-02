@@ -13,9 +13,9 @@ export const ProductService = {
             tr: "Nike React Infinity Run Flyknit 2 ile koşmayı asla bırakma."
           },
           images:{
-            pink:'@/assets/images/pink.png',
-            mint:'@/assets/images/mint.png',
-            blue:'@/assets/images/blue.png',
+            pink:'/assets/images/pink.png',
+            mint:'/assets/images/mint.png',
+            blue:'/assets/images/blue.png',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,6,7,8,9,10],
@@ -38,9 +38,9 @@ export const ProductService = {
             tr: "Nike React Infinity Run Flyknit One ile koşmayı asla bırakma."
           },
           images:{
-            pink:'@/assets/images/pink.png',
-            mint:'@/assets/images/mint.png',
-            blue:'@/assets/images/blue.png',
+            pink:'/assets/images/pink.png',
+            mint:'/assets/images/mint.png',
+            blue:'/assets/images/blue.png',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,7,9,10],
@@ -63,9 +63,9 @@ export const ProductService = {
             tr: "Nike React Run Flyknit Smoke ile koşmayı asla bırakma."
           },
           images:{
-            pink:'@/assets/images/pink.png',
-            mint:'@/assets/images/mint.png',
-            blue:'@/assets/images/blue.png',
+            pink:'/assets/images/pink.png',
+            mint:'/assets/images/mint.png',
+            blue:'/assets/images/blue.png',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,6,7],
@@ -88,9 +88,9 @@ export const ProductService = {
             tr: "Adidas Ultraboost, bitmeyen enerji için tepki veren yastıklama ile."
           },
           images:{
-            black: '@/assets/images/black.png',
-            white: '@/assets/images/white.png',
-            red: '@/assets/images/red.png',
+            black: '/assets/images/black.png',
+            white: '/assets/images/white.png',
+            red: '/assets/images/red.png',
           },
           availableColor: ["black", "white", "red"],
           availableSize: [6, 7, 8, 9, 10, 11],
@@ -113,9 +113,9 @@ export const ProductService = {
             tr: "Yüksek yoğunluklu antrenmanlar ve konfor için tasarlanmış Puma Ignite XT."
           },
           images:{
-            gray: '@/assets/images/gray.png',
-            orange: '@/assets/images/orange.png',
-            green: '@/assets/images/green.png',
+            gray: '/assets/images/gray.png',
+            orange: '/assets/images/orange.png',
+            green: '/assets/images/green.png',
           },
           availableColor: ["gray", "orange", "green"],
           availableSize: [7, 8, 9, 10, 11],
@@ -138,9 +138,9 @@ export const ProductService = {
             tr: "New Balance Fresh Foam, peluş ve doğal bir sürüş sunar."
           },
           images:{
-            purple: '@/assets/images/purple.png',
-            teal: '@/assets/images/teal.png',
-            black: '@/assets/images/black.png',
+            purple: '/assets/images/purple.png',
+            teal: '/assets/images/teal.png',
+            black: '/assets/images/black.png',
           },
           availableColor: ["purple", "teal", "black"],
           availableSize: [6, 7, 8, 9],
@@ -163,9 +163,9 @@ export const ProductService = {
             tr: "Stabilite ve dayanıklılık için tasarlanmış Reebok Nano X çapraz antrenmanlar için."
           },
           images:{
-            blue: '@/assets/images/blue.png',
-            yellow: '@/assets/images/yellow.png',
-            black: '@/assets/images/black.png',
+            blue: '/assets/images/blue.png',
+            yellow: '/assets/images/yellow.png',
+            black: '/assets/images/black.png',
           },
           availableColor: ["blue", "yellow", "black"],
           availableSize: [7, 8, 9, 10],
@@ -188,9 +188,9 @@ export const ProductService = {
             tr: "Zamanın ötesinde bir stile sahip olan klasik kaykay ayakkabısı Vans Old Skool."
           },
           images:{
-            blackWhite: '@/assets/images/black-white.png',
-            redWhite: '@/assets/images/red-white.png',
-            blueWhite: '@/assets/images/blue-white.png',
+            blackWhite: '/assets/images/black-white.png',
+            redWhite: '/assets/images/red-white.png',
+            blueWhite: '/assets/images/blue-white.png',
           },
           availableColor: ["blackWhite", "redWhite", "blueWhite"],
           availableSize: [6, 7, 8, 9, 10],
@@ -213,9 +213,9 @@ export const ProductService = {
             tr: "Her gün stil için ikonik spor ayakkabı Converse Chuck Taylor All Star."
           },
           images:{
-            blackCanvas: '@/assets/images/black-canvas.png',
-            whiteCanvas: '@/assets/images/white-canvas.png',
-            redCanvas: '@/assets/images/red-canvas.png',
+            blackCanvas: '/assets/images/black-canvas.png',
+            whiteCanvas: '/assets/images/white-canvas.png',
+            redCanvas: '/assets/images/red-canvas.png',
           },
           availableColor: ["blackCanvas", "whiteCanvas", "redCanvas"],
           availableSize: [5, 6, 8, 9, 10],
@@ -238,9 +238,9 @@ export const ProductService = {
             tr: "ASICS Gel-Kayano, uzun mesafe koşuları için stabilite ve konfor sunar."
           },
           images:{
-            blackSilver: '@/assets/images/black-silver.png',
-            blueWhite: '@/assets/images/blue-white.png',
-            redBlack: '@/assets/images/red-black.png',
+            blackSilver: '/assets/images/black-silver.png',
+            blueWhite: '/assets/images/blue-white.png',
+            redBlack: '/assets/images/red-black.png',
           },
           availableColor: ["blackSilver", "blueWhite", "redBlack"],
           availableSize: [7, 8, 9, 10, 11],
@@ -263,7 +263,12 @@ export const ProductService = {
   },
 
   getProducts() {
-      return Promise.resolve(this.getProductsData());
+    return this.getProductsData()
   },
+
+  getProductsWithGender(gender){
+    const genderData = this.getProductsData().filter((product) => product.gender === 'Unisex' || product.gender === gender);
+    return genderData
+  }
 };
 
