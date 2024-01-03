@@ -27,7 +27,7 @@ import Card from 'primevue/card';
 import Button from 'primevue/button';
 import Rating from 'primevue/rating';
 import { useI18n } from 'vue-i18n';
-import { getImageUrl } from '@/utils/helpers';
+
 
 const selectedColor = ref(null); 
 
