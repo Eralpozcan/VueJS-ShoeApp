@@ -3,8 +3,6 @@ const getImageUrl = (image) => {
   return imgUrl
 }
 
-
-
 export {
   getImageUrl
 }

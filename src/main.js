@@ -14,14 +14,30 @@ const i18n = createI18n({
   locale: 'en',
   messages: {
     en: {
-      message: {
-        hello: 'hello world'
-      }
+      category: {
+        men: 'Men',
+        women: 'Women'
+      },
+      change_language: 'Change Language',
+      locale_en: 'English',
+      locale_tr: 'Turkish',
+      totalPrice: 'Total Price',
+      go_to_Payment: 'Go to Payment Page',
+      all_cart_items: 'All Cart Items',
+      add_to_cart: 'Add to Cart',
     },
     tr: {
-      message: {
-        hello: 'merhaba dünya'
-      }
+      category: {
+        men: 'Erkek',
+        women: 'Kadın'
+      },
+      change_language: 'Dili Değiştir',
+      locale_en: 'English',
+      locale_tr: 'Türkçe',
+      totalPrice: 'Toplam Fiyat',
+      go_to_Payment: 'Ödeme Sayfasına Git',
+      all_cart_items: 'Tüm Sepet Ürünleri',
+      add_to_cart: 'Sepete Ekle',
     }
   }
 })
