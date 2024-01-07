@@ -13,9 +13,9 @@ export const ProductService = {
             tr: "Nike React Infinity Run Flyknit 2 ile koşmayı asla bırakma."
           },
           images:{
-            pink:'/assets/images/pink.png',
-            mint:'/assets/images/mint.png',
-            blue:'/assets/images/blue.png',
+            pink:'/assets/images/pink.webp',
+            mint:'/assets/images/mint.webp',
+            blue:'/assets/images/blue.webp',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,6,7,8,9,10],
@@ -38,9 +38,9 @@ export const ProductService = {
             tr: "Nike React Infinity Run Flyknit One ile koşmayı asla bırakma."
           },
           images:{
-            pink:'/assets/images/pink.png',
-            mint:'/assets/images/mint.png',
-            blue:'/assets/images/blue.png',
+            pink:'/assets/images/pink.webp',
+            mint:'/assets/images/mint.webp',
+            blue:'/assets/images/blue.webp',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,7,9,10],
@@ -63,9 +63,9 @@ export const ProductService = {
             tr: "Nike React Run Flyknit Smoke ile koşmayı asla bırakma."
           },
           images:{
-            pink:'/assets/images/pink.png',
-            mint:'/assets/images/mint.png',
-            blue:'/assets/images/blue.png',
+            pink:'/assets/images/pink.webp',
+            mint:'/assets/images/mint.webp',
+            blue:'/assets/images/blue.webp',
           },
           availableColor:["pink","mint","blue"],
           availableSize:[5,6,7],
@@ -88,8 +88,8 @@ export const ProductService = {
             tr: "Adidas Ultraboost, bitmeyen enerji için tepki veren yastıklama ile."
           },
           images:{
-            blue: '/assets/images/blue-ultraboost.png',
-            gold: '/assets/images/gold-ultraboost.png',
+            blue: '/assets/images/blue-ultraboost.webp',
+            gold: '/assets/images/gold-ultraboost.webp',
           },
           availableColor: ["gold", "blue"],
           availableSize: [6, 7, 8, 9, 10, 11],
@@ -112,8 +112,8 @@ export const ProductService = {
             tr: "Yüksek yoğunluklu antrenmanlar ve konfor için tasarlanmış Puma Ignite XT."
           },
           images:{
-            blue: '/assets/images/blue-ultraboost.png',
-            gold: '/assets/images/gold-ultraboost.png',
+            blue: '/assets/images/blue-ultraboost.webp',
+            gold: '/assets/images/gold-ultraboost.webp',
           },
           availableColor: ["gold", "blue"],
           availableSize: [7, 8, 9, 10, 11],
@@ -136,8 +136,8 @@ export const ProductService = {
             tr: "New Balance Fresh Foam, peluş ve doğal bir sürüş sunar."
           },
           images:{
-            blue: '/assets/images/blue-ultraboost.png',
-            gold: '/assets/images/gold-ultraboost.png',
+            blue: '/assets/images/blue-ultraboost.webp',
+            gold: '/assets/images/gold-ultraboost.webp',
           },
           availableColor: ["gold", "blue"],
           availableSize: [6, 7, 8, 9],
@@ -160,8 +160,8 @@ export const ProductService = {
             tr: "Stabilite ve dayanıklılık için tasarlanmış Reebok Nano X çapraz antrenmanlar için."
           },
           images:{
-            blue: '/assets/images/blue.png',
-            black: '/assets/images/black.png',
+            blue: '/assets/images/blue.webp',
+            black: '/assets/images/black.webp',
           },
           availableColor: ["blue","black"],
           availableSize: [7, 8, 9, 10],
@@ -184,7 +184,7 @@ export const ProductService = {
             tr: "Zamanın ötesinde bir stile sahip olan klasik kaykay ayakkabısı Vans Old Skool."
           },
           images:{
-            classic: '/assets/images/vans-old-skool.png'
+            classic: '/assets/images/vans-old-skool.webp'
           },
           availableColor: ["classic"],
           availableSize: [6, 7, 8, 9, 10],
@@ -207,7 +207,7 @@ export const ProductService = {
             tr: "Her gün stil için ikonik spor ayakkabı Converse Chuck Taylor All Star."
           },
           images:{
-            whiteCanvas: '/assets/images/converse-chunk-white.png',
+            whiteCanvas: '/assets/images/converse-chunk-white.webp',
           },
           availableColor: ["whiteCanvas"],
           availableSize: [5, 6, 8, 9, 10],
