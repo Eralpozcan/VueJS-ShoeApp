@@ -52,7 +52,7 @@ const decreaseQuantity = (id) => {
   if (item.quantity > 1) modifyCartItemQuantity(id, -1);
 }
 const deleteCartItem = (id) => {
-  const updatedCartItems = cartItems.value.filter((item) => item.id !== id);
+  const updatedCartItems = cartItems.value.filter((cartItem) => cartItem.id !== id);
   updateCartItems(updatedCartItems);
 }
 const isCartItems = computed(() => {

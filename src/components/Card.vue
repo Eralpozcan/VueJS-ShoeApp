@@ -14,7 +14,7 @@
       </div> 
     </template>
     <template #content>
-      <Rating v-model="props.data.rating" readonly :cancel="false"> </Rating>
+      <Rating v-model="ratingValues" readonly :cancel="true"> </Rating>
       <p class="m-0">
         {{ getDesc }}
       </p>
@@ -56,6 +56,11 @@ const getAvaibleImage = computed(() => {
   const ImageData = JSON.parse(JSON.stringify(props.data.images))
   return ImageData
 })
+const ratingValues = computed(() => {
+  const ratingData = JSON.parse(JSON.stringify(props.data.rating))
+  return ratingData
+})
+
 const getImages = computed(() => {
   if (selectedColor.value === null) return getAvaibleImage.value[getDefaultColor.value]
   else {
@@ -68,7 +73,7 @@ const addCartItem = (data) => {
     id: data.id,
     name: data.name,
     price: data.price,
-    totalPrice: data.price * 1,
+    totalPrice: data.price,
     image: data.images[JSON.parse(JSON.stringify(props.data.availableColor))[0]], // Should be refactor
   }
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
@@ -79,7 +84,4 @@ const addCartItem = (data) => {
   } else cartItems.push({ ...cartPayload, quantity: 1 });
   localStorage.setItem('cart', JSON.stringify(cartItems));
 };
-
-
-
 </script>
