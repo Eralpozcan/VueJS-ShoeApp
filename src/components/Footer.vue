@@ -15,7 +15,7 @@ const socialData = [
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <button v-for="social in socialData" :key="social.icon" type="button">
-                    <a :class="['pi', social.icon,]" :href="social.href" target="_blank"></a>
+                    <a :class="['pi', social.icon,]" :href="social.href" target="_blank" rel='noopener noreferrer'></a>
                 </button>
             </div>
         </div>
