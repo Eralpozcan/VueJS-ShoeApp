@@ -14,7 +14,7 @@
       </div> 
     </template>
     <template #content>
-      <Rating v-model="ratingValues" readonly :cancel="true"> </Rating>
+      <Rating v-model="ratingValues" readonly :cancel="false"></Rating>
       <p class="m-0">
         {{ getDesc }}
       </p>
