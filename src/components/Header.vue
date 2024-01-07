@@ -1,6 +1,5 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
-import Button from 'primevue/button';
 import { RouterLink } from 'vue-router';
 import { useI18n } from 'vue-i18n'
 
