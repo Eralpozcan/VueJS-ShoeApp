@@ -52,16 +52,16 @@ const getDefaultColor = computed(() => {
   const colorData = JSON.parse(JSON.stringify(props.data.availableColor))
   return colorData[0]
 })
+const getAvaibleImage = computed(() => {
+  const ImageData = JSON.parse(JSON.stringify(props.data.images))
+  return ImageData
+})
 const getImages = computed(() => {
   if (selectedColor.value === null) return getAvaibleImage.value[getDefaultColor.value]
   else {
     const selectedColorData = getAvaibleImage.value.filter((item) => item === selectedColor.value)
     return selectedColorData[0]
   }
-})
-const getAvaibleImage = computed(() => {
-  const ImageData = JSON.parse(JSON.stringify(props.data.images))
-  return ImageData
 })
 const addCartItem = (data) => {
   const cartPayload = {
