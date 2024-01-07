@@ -8,9 +8,6 @@ const productsList = ref([])
 onMounted(async () => {
   const fetchedProducts = await ProductService.getProducts()
   productsList.value = fetchedProducts
-
-  const genderWithData = await ProductService.getProductsWithGender('Women')
-  console.log(genderWithData)
 })
 </script>
 

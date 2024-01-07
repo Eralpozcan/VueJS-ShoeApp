@@ -24,7 +24,8 @@ const getName = (name) => {
 }
 
 const openCart = () => {
-  cartItems.value = JSON.parse(localStorage.getItem('cart'))
+  const localStorageCart = JSON.parse(localStorage.getItem('cart'))
+  if (localStorageCart) cartItems.value = JSON.parse(localStorage.getItem('cart'))
 }
 
 const updateCartItems = (updatedCartItems) => {
