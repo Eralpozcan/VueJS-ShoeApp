@@ -1,6 +1,12 @@
 {
   "name": "WonkaShoeApp",
-  "version": "0.0.1",
+  "author": {
+    "name": "Eralpozcan"
+  },
+  "description": "Wonka's Shoes",
+  "repository": "",
+  "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {

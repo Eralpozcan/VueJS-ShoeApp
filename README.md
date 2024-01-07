@@ -1,35 +1,34 @@
-# shoeapp
 
-This template should help get you started developing with Vue 3 in Vite.
+![Wonka's Shoes](./docs/logo.png)
 
-## Recommended IDE Setup
+### 📔 **About**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+### 📜 **Features**
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Multi-Language (English/Turkish)
+- Basic Cart Functionality
+- Product Listing
 
-## Project Setup
 
-```sh
-npm install
-```
+## Screenshots
 
-### Compile and Hot-Reload for Development
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+### 💻 **Tech Stack**
 
-```sh
-npm run build
-```
+- [Vue 3](https://v3.vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Vue Router](https://router.vuejs.org/)
+- [PrimeVue](https://primefaces.org/primevue/showcase/#/)
+- [Sentry](https://sentry.io/welcome/)
+- [Vercel](https://vercel.com/dashboard)
+- [DeepSource](https://deepsource.io/dashboard)
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
-npm run test:unit
-```
+## Authors
+
+- [@Eralpozcan](https://www.github.com/Eralpozcan)
+

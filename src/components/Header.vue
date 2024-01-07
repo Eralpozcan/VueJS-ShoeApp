@@ -125,9 +125,6 @@ onMounted(() => {
         </button>
         <div class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
           <div class="absolute right-0 w-36 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" role="menu">
-            <div class="flex px-2 py-2 bg-gray-300 justify-center">
-              <p class="text-sm leading-5"> {{ $t('change_language') }}</p>
-            </div>
             <div class="py-1">
               <span tabindex="0" class="text-gray-700 flex justify-center w-full px-2 py-2 text-sm leading-5 text-left" :class="[{'opacity-70': lang === locale }]" role="menuitem" v-for="lang in availableLocales" :key="lang" @click="changeTranslations(lang)"> {{ $t(`locale_${lang}`) }}</span>
             </div>

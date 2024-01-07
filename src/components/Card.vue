@@ -8,7 +8,11 @@
         {{ getName }}
       </div>
     </template>
-    <template #subtitle></template>
+    <template #subtitle>
+      <div class="text-xl">
+        {{ props.data.price }} $
+      </div> 
+    </template>
     <template #content>
       <Rating v-model="props.data.rating" readonly :cancel="false"> </Rating>
       <p class="m-0">
