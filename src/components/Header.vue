@@ -33,12 +33,12 @@ const updateCartItems = (updatedCartItems) => {
 }
 
 const modifyCartItemQuantity = (id, amount) => {
-  const updatedCartItems = cartItems.value.map((item) => {
-    if (item.id === id) {
-      item.quantity += amount;
-      item.totalPrice = item.quantity * item.price;
+  const updatedCartItems = cartItems.value.map((cartItem) => {
+    if (cartItem.id === id) {
+      cartItem.quantity += amount;
+      cartItem.totalPrice = cartItem.quantity * cartItem.price;
     }
-    return item;
+    return cartItem;
   });
   updateCartItems(updatedCartItems);
 }
